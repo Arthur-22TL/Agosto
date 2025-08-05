@@ -1,0 +1,354 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos da Hero Section */
+.hero-section {
+    background-color: #007bff;
+     background-image: url("img/fb496d3ad94366509e8d4d05ca0b1bef.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section .subheadline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #a72828;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #741a1a;
+}
+
+/* Botões de Upgrade e Voltar */
+.upgrade-button, .back-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.upgrade-button:hover, .back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos das Seções de Conteúdo */
+section {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff0000;
+}
+
+/* Seção de Benefícios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Seção de Como Funciona */
+.steps {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.steps li {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.steps h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+/* Seção de Prova Social */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Seção de Recursos */
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Seção de Preços */
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.pricing-plan:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.pricing-plan:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.pricing-plan {
+    border: 1px solid #da8686;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plan-option {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-option.premium {
+    border-color: #ff0000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-option.hidden {
+    display: none;
+}
+
+.plan-option h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.plan-option ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.plan-option ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-option ul li:last-child {
+    border-bottom: none;
+}
+
+/* Seção de Call to Action Final */
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.lead-form {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.lead-form input[type="email"] {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+}
+
+.lead-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.lead-form button:hover {
+    background-color: #218838;
+}
+
+.cta-section .guarantee {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .benefits-grid, .steps, .testimonials, .pricing-options {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-plan {
+        min-height: auto;
+    }
+
+    .pricing-plan:nth-child(3), .pricing-plan:nth-child(4) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .plan-option {
+        min-height: auto;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav {
+        margin-top: 10px;
+    }
+
+    footer nav a {
+        margin: 0 10px;
+    }
+}
