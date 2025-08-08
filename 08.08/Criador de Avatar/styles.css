@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #1e1e2f;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.container {
+    text-align: center;
+}
+.interface {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.editor {
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 30px);
+    
+}
